@@ -1,1 +1,1 @@
-# e wallet using springboot and mongoDB
+# Electronic wallet using spring boot and mongoDB
