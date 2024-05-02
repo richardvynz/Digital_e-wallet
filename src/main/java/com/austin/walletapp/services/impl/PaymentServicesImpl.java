@@ -190,7 +190,8 @@ public class PaymentServicesImpl implements PaymentServices {
             apiResponse = restTemplate.exchange(endPoint, HttpMethod.POST, entity, ApiResponse.class);
 
         } catch (Exception e) {
-            throw  new NotFoundException(e.getMessage()+". Sorry about that. This is just a test API, but your transfer would be processed if this was a production app");
+            throw  new NotFoundException(e.getMessage()+". Sorry about that. This is just a test API, " +
+                    "but your transfer would be processed if this was a production app");
         }
         TransactionResponseDto transactionResponseDto = appUtil.getMapper()
                 .convertValue(Objects.requireNonNull(apiResponse.getBody()).getData(), TransactionResponseDto.class);
