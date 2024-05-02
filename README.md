@@ -2,7 +2,6 @@
 This project is an Electronic Wallet application developed using Spring Boot and MongoDB. It aims to provide users with a convenient and secure way to manage their finances digitally.
 
 ## Features
-- User Authentication: Secure user authentication system to ensure data privacy.
 - Wallet Management: Users can easily add funds, make transactions, and view transaction history.
 - Transaction History: Keep track of all transactions for better financial management.
 - Security: Utilizes encryption and secure protocols to safeguard user data.
